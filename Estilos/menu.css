@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'docktrin';
+    src: url(../Fontes/docktrin.ttf); format:('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Genova';
+    src: url(../Fontes/Genova.otf); format:('opentype');
+    font-weight: normal;
+}
+:root{
+    --fundo: #dddbcf;
+    --branco: #ffffff;
+    --branco2: #ffffff79;
+    --preto:  #000000;
+    --preto2: #0000009d;
+    --marrom1: #C08260;
+    --marrom2: #A36B58;
+    --marrom3: #E7977D;
+    --marrom4: #C5816A;
+    --marrom5: #815546;
+    --marrom6: #5F3E33;
+    --marrom7: #9E6B4F; 
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Genova', sans-serif;
+    --fonte-titulo: 'docktrin', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background-color: var(--marrom6);
+    background-image: url('../Imagens/bgmadeira.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+a.externo::after{
+    content: '\00A0\1F517';
+}
+header{
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(to bottom, var(--marrom1), var(--marrom5));
+}
+header > h1{
+    padding: 15px;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 3px #00000083;
+}
+header > p{
+    padding: 10px;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 3px #00000080;
+}
+nav{
+    position: sticky;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    background-color: var(--marrom5);
+    padding: 10px;
+}
+nav > i > a{
+    display: inline-block;
+    margin: 4px;
+    padding: 2px;
+    text-decoration: none;
+    color: var(--marrom3);
+    background-color: var(--marrom6);
+    border: 3px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: .8s;
+}
+nav > i > a:hover{
+    color: var(--marrom6);
+    background-color: var(--marrom3);
+    border: 3px solid var(--marrom4);
+    transform: translateY(-3px);
+}
+main> div#menu > h1{
+    padding: 10px;
+    border: 2px solid black;
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--marrom6);
+    color: var(--branco);
+    text-shadow: 2px 2px 2px var(--marrom4);
+    box-shadow: 1px 1px 1px black;
+}
+main > div#menu > h2{
+    padding: 5px;
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--marrom5);
+    color: var(--branco);
+    text-shadow: 2px 2px 2px var(--marrom7);
+    box-shadow: 1px 1px 1px black;
+}
+main > section.foods > div#mestre {
+    height: 100vh;
+    width: 100vw;
+}
+main > section.foods > div#mestre > div.box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #81554683;
+    border: 2px solid;
+    transition-duration: .8s;
+    width: 100vw;
+}
+main > section.foods > div#mestre > div.box:hover{
+    background-color: #5f3e3394;
+    color: var(--branco);
+    cursor: pointer;
+    transform-origin: -100% 50%;
+    transform: translateY(-5px);
+}
+p.price{
+    font-size: large;
+    font-weight: 500;
+    font-family: var(--fonte-destaque);
+    color: var(--branco);
+    text-shadow: 2px 2px 2px var(--marrom3);
+    padding: 15px;
+    margin: 10px;
+    justify-content: center;
+}
+main > section.foods > div#mestre > div.box > img{
+    height: 25vh;
+    width: 30vw;
+    border: 2px solid;
+    border-radius: 45%;
+}
+footer {
+    background-color: var(--marrom5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: underline;
+}

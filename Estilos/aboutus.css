@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'docktrin';
+    src: url(../Fontes/docktrin.ttf); format:('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Genova';
+    src: url(../Fontes/Genova.otf); format:('opentype');
+    font-weight: normal;
+}
+:root{
+    --fundo: #dddbcf;
+    --branco: #ffffff;
+    --branco2: #ffffff79;
+    --preto:  #000000;
+    --preto2: #0000009d;
+    --marrom1: #C08260;
+    --marrom2: #A36B58;
+    --marrom3: #E7977D;
+    --marrom4: #C5816A;
+    --marrom5: #815546;
+    --marrom6: #5F3E33;
+    --marrom7: #9E6B4F; 
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Genova', sans-serif;
+    --fonte-titulo: 'docktrin', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    overflow-x: hidden ;
+}
+a.externo::after{
+    content: '\00A0\1F517';
+}
+header{
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(to bottom, var(--marrom1), var(--marrom5));
+}
+header > h1{
+    padding: 15px;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 3px #00000083;
+}
+header > p{
+    padding: 10px;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 3px #00000080;
+}
+nav{
+    position: sticky;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    background-color: var(--marrom5);
+    padding: 10px;
+}
+nav > i > a{
+    display: inline-block;
+    margin: 4px;
+    padding: 2px;
+    text-decoration: none;
+    color: var(--marrom3);
+    background-color: var(--marrom6);
+    border: 3px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: .8s;
+}
+nav > i > a:hover{
+    color: var(--marrom6);
+    background-color: var(--marrom3);
+    border: 3px solid var(--marrom4);
+    transform: translateY(-3px);
+}
+main > section#lolo > h1{
+    width: 100vw;
+    padding: 10px;
+    border: 2px solid black;
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--marrom6);
+    color: var(--branco);
+    text-shadow: 2px 2px 2px var(--marrom4);
+}
+main > section#lolo > div#history{
+    background-color: var(--marrom5);
+}
+main > section#lolo > div#history > h2{
+    width: 100vw;
+    padding: 12px;
+    border: 2px solid black;
+    background-color: var(--marrom4);
+    color: var(--branco);
+    text-shadow: 2px 2px 2px var(--marrom3);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 1.5em
+}
+main > section#lolo > div#history > p.pp{
+    padding: 10px;
+    font-size: large;
+    font-family: var(--fonte-destaque);
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 2px 1px var(--preto);
+}
+main > section#papa{
+    background-color: var(--marrom5);
+}
+main > section#papa > div#mvv > h2 {
+    width: 100vw;
+    padding: 12px;
+    border: 2px solid black;
+    background-color: var(--marrom4);
+    color: var(--branco);
+    text-shadow: 2px 2px 2px var(--marrom3);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 1.5em
+}
+main > section#papa > div#mvv > p.pp{
+    padding: 10px;
+    font-size: large;
+    font-family: var(--fonte-destaque);
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 2px 1px var(--preto);
+}
+main > section#fax > div#tete {
+    display: flex;
+    align-items: center;
+}
+main > section#fax{
+    background-color: var(--marrom5);
+}
+main > section#fax > h2 {
+    width: 100vw;
+    padding: 12px;
+    border: 2px solid black;
+    background-color: var(--marrom4);
+    color: var(--branco);
+    text-shadow: 2px 2px 2px var(--marrom3);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 1.5em
+}
+main > section#fax > div#tete > p {
+    padding: 10px;
+    font-size: large;
+    font-family: var(--fonte-destaque);
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 2px 1px var(--preto);
+}
+main > section#fax > div#tete > img {
+    height: 35vh;
+    width: 35vw;
+}
+footer {
+    background-color: var(--marrom7);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: underline;
+}
